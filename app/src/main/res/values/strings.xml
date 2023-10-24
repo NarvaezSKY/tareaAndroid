@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SENAgram</string>
+    <string name="login">Olvidaste tu contraseña? Ayuda de inicio de sesión</string>
+    <string name="usuario">Número de teléfono, email o nombre de usuario</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="texto_foto">Albareto Siempre te llamo de madrugá\' porque quería decirte que Me encanta todo desde la primera ve\' Pero esta ve\' a mí me tocó perder</string>
+    <string name="legusta_a">Les gusta a tucucha y otras personas</string>
+    <string name="agrega_un_comentario">Agrega un comentario...</string>
+</resources>
