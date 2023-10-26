@@ -8,9 +8,19 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/espa_ol_colombia"
+        android:textColor="@color/gray"
+        android:textSize="40px" />
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_height="70dp"
         android:layout_marginTop="70pt"
         android:src="@drawable/instagram" />
 
@@ -35,6 +45,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/login"
         android:text="@string/iniciar_sesi_n"
+        android:layout_marginTop="100px"
         android:textSize="60px" />
 
     <TextView
