@@ -12,17 +12,12 @@
         android:layout_height="56dp"
         android:background="@drawable/redondito"
         android:src="@drawable/alvarin"
-
         />
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="albareto69">
-
-
+        android:text="@string/albareto69">
     </TextView>
 
     <ImageView
@@ -42,8 +37,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/legusta_a">
-
+        android:text="@string/legusta_a">¿
     </TextView>
 
     <TextView
@@ -62,26 +56,25 @@
         android:hint="@string/agrega_un_comentario"
         ></EditText>
 
+
     <ImageView
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:background="@drawable/redondito"
         android:src="@drawable/alvarin"
-
         />
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="albareto69">
+        android:text="@string/albareto69">
 
 
     </TextView>
 
     <ImageView
-        android:layout_width="373dp"
+        android:layout_width="wrap_content"
         android:layout_height="221dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/yesui">

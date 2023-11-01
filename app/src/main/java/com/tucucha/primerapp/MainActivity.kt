@@ -4,18 +4,41 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.content.Intent
+import android.view.LayoutInflater
 import android.widget.Toast
+import com.tucucha.primerapp.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val btn: Button=findViewById(R.id.button)
-        btn.setOnClickListener{
-            val intent:Intent=Intent(this, HomePage::class.java)
+
+        binding = ActivityMainBinding.inflate(LayoutInflater.from(this))
+
+        setContentView(binding.root)
+
+        initUI()
+
+
+
+    }
+    //functions
+
+    private fun initUI(){
+        buttonConfig2()
+    }
+
+
+    private fun buttonConfig2() {
+
+        binding.button.setOnClickListener{
+
+            val intent=Intent(this, HomePage::class.java)
             startActivity(intent)
-            Toast.makeText(this, "Ingresaste uvu", 1000).show();
+            Toast.makeText(this, "Ingresaste uvu", Toast.LENGTH_SHORT).show();
         }
     }
+
 }
