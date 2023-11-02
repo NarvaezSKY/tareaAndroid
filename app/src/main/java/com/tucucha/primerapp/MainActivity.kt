@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        initUI()
 
+        initUI()
 
 
     }
@@ -28,17 +28,22 @@ class MainActivity : AppCompatActivity() {
 
     private fun initUI(){
         buttonConfig2()
+
     }
 
 
     private fun buttonConfig2() {
-
-        binding.button.setOnClickListener{
-
-            val intent=Intent(this, HomePage::class.java)
+        binding.button.setOnClickListener {
+            val username = binding.username.text.toString()
+            val intent = Intent(this, HomePage::class.java)
+            intent.putExtra("clave_valor", username)
             startActivity(intent)
-            Toast.makeText(this, "Ingresaste uvu", Toast.LENGTH_SHORT).show();
         }
     }
 
-}
+
+    }
+
+
+
+

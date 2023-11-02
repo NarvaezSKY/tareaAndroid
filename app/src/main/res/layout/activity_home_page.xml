@@ -7,6 +7,14 @@
     tools:context=".HomePage"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="30dp">
+
+    </TextView>
+
     <ImageView
         android:layout_width="56dp"
         android:layout_height="56dp"
@@ -17,8 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/albareto69">
-    </TextView>
+        android:text="@string/albareto69"></TextView>
 
     <ImageView
         android:layout_width="373dp"
@@ -48,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver los 69 comentarios"></TextView>
+        android:text="@string/ver_los_69_comentarios"></TextView>
 
     <EditText
         android:layout_width="match_parent"
