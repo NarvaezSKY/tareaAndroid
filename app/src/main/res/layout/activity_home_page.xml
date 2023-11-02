@@ -7,91 +7,164 @@
     tools:context=".HomePage"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/user"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:textSize="30dp">
 
-    </TextView>
 
     <ImageView
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:background="@drawable/redondito"
-        android:src="@drawable/alvarin"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/albareto69"></TextView>
-
-    <ImageView
-        android:layout_width="373dp"
-        android:layout_height="221dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/home">
-
-    </ImageView>
-
-    <ImageView
-        android:layout_width="151dp"
+        android:layout_width="158dp"
         android:layout_height="51dp"
-        android:src="@drawable/botones">
-
-    </ImageView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/legusta_a">¿
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/texto_foto"></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ver_los_69_comentarios"></TextView>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:hint="@string/agrega_un_comentario"
-        ></EditText>
-
-
-    <ImageView
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:background="@drawable/redondito"
-        android:src="@drawable/alvarin"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/albareto69">
-
-
-    </TextView>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="221dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/yesui">
+        android:src="@drawable/instagram"
+        android:layout_marginTop="10dp">
 
     </ImageView>
 
+    <ScrollView
+
+    android:layout_width="wrap_content"
+    android:layout_height="550dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="503dp"
+                    android:layout_height="98dp"
+                    android:src="@drawable/storiesig">
+
+                </ImageView>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/redondito"
+                android:src="@drawable/alvarin"
+                />
+
+            <TextView
+                android:id="@+id/usertal"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/albareto69"
+                android:layout_marginTop="15dp"></TextView>
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="373dp"
+            android:layout_height="221dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/home">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="151dp"
+            android:layout_height="51dp"
+            android:src="@drawable/botones">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legusta_a">¿
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_foto"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ver_los_69_comentarios"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:hint="@string/agrega_un_comentario"
+            ></EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/redondito"
+                android:src="@drawable/alvarin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/albareto69"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"></TextView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="221dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/yesui">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="151dp"
+            android:layout_height="51dp"
+            android:src="@drawable/botones">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/legusta_a">¿
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/segundafotoString"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ver_los_69_comentarios"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:hint="@string/agrega_un_comentario"
+            ></EditText>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
     <ImageView
-        android:layout_width="151dp"
-        android:layout_height="51dp"
-        android:src="@drawable/botones">
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:src="@drawable/menu">
 
     </ImageView>
 
