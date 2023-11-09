@@ -1,8 +1,7 @@
-package com.tucucha.primerapp
+package com.tucucha.primerapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.content.Intent
 import android.view.LayoutInflater
 import android.widget.Toast
@@ -42,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, HomePage::class.java)
             intent.putExtra("clave_valor", username)
             sharedPref.saveUser(username)
+            sharedPref.saveBoolean()
             startActivity(intent)
         }
     }

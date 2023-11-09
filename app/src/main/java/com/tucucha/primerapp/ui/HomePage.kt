@@ -1,4 +1,4 @@
-package com.tucucha.primerapp
+package com.tucucha.primerapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -27,9 +27,8 @@ class HomePage : AppCompatActivity() {
         val textView=binding.usertal
         textView.text=valor
 
-        //val textView=binding.user
+        val logout=sharedPref.
 
-        //textView.text = "Bienvenido, $valor"
     }
 
 }

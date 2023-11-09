@@ -20,4 +20,16 @@ class SharedReferenceManager(private var context:Context){
     fun getUser ():String{
         return sharedPreferences.getString("keyUserPref","Empty").toString()
     }
+    fun saveBoolean(){
+        val editor=sharedPreferences.edit()
+        editor.putBoolean("myBoolean", true)
+        editor.apply()
+    }
+    fun getUserIsLogged():Boolean{
+        return sharedPreferences.getBoolean("myBoolean", false)
+    }
+
+    fun removeSharedPref(key:String){
+        val editor=
+    }
 }

@@ -15,7 +15,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="140dp"
 
         android:src="@drawable/frometa"></ImageView>
 
