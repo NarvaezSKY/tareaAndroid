@@ -29,7 +29,9 @@ class SharedReferenceManager(private var context:Context){
         return sharedPreferences.getBoolean("myBoolean", false)
     }
 
-    fun removeSharedPref(key:String){
-        val editor=
+    fun removeSharedPref(key: String) {
+        val editor = sharedPreferences.edit()
+        editor.remove(key)
+        editor.apply()
     }
 }

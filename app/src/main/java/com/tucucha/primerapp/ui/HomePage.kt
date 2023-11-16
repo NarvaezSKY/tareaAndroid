@@ -1,7 +1,9 @@
 package com.tucucha.primerapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.SyncStateContract.Constants
 import android.widget.TextView
 import android.view.LayoutInflater
 import android.widget.Toast
@@ -22,13 +24,34 @@ class HomePage : AppCompatActivity() {
         sharedPref= SharedReferenceManager(this)
 
 
-        val valor = intent.getStringExtra("clave_valor")
 
+
+        initUI()
+
+    }
+    private fun initUI() {
+        setupExtras()
+
+        setupClickListeners()
+    }
+
+    private fun setupExtras(){
+        val valor = intent.getStringExtra("clave_valor")
         val textView=binding.usertal
         textView.text=valor
+    }
 
-        val logout=sharedPref.
+    private fun setupClickListeners() {
+        binding.logout.setOnClickListener {
 
+            sharedPref.removeSharedPref("keyUserPref")
+            sharedPref.removeSharedPref("myBoolean")
+
+             val intent = Intent(this, MainActivity::class.java)
+             startActivity(intent)
+
+            finish()
+        }
     }
 
 }
